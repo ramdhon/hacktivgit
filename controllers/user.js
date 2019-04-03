@@ -8,7 +8,7 @@ ax.defaults.headers.common['Authorization'] = `token ${process.env.GITHUB_TOKEN}
 class Controller {
   static getRepos(req, res) {
     ax
-      .get('/user')
+      .get('/user/repos')
       .then(( { data } ) => {
         res.status(200).json(data);
       })
