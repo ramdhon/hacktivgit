@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hacktiv Git</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Hacktiv Git</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Your Repos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Your Starred Repos</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Starred Repos" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find</button>
+        </form>
+      </div>
+    </nav>
+    <div class="blank">
+      <div class="row"><h1></h1></div>
+      <div class="row"><h1></h1></div>
+      <div class="row"><h1></h1></div>
+      <div class="row"><h1></h1></div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div id="left" class="col-7">
+          <div class="container">
+            <div class="row">
+              
+              <div id="users" class="col-4">
+                <h5>USERS</h5>
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action active">
+                    ramdhon
+                  </button>
+                  <button type="button" class="list-group-item list-group-item-action">classic-fox-2019</button>
+                  <button type="button" class="list-group-item list-group-item-action">rubhiauliatirta</button>
+                </div>
+              </div>
+              
+              <div id="main" class="col">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <form  method="POST" id="repo-form" class="form-inline my-2 my-lg-0">
+                        <input
+                          type="text"
+                          id="repoName"
+                          placeholder="new repo"
+                          autocomplete="off"
+                          autofocus
+                          class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Create</button>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="blank">
+                    <div class="row"><h1></h1></div>
+                    <div class="row"><h1></h1></div>
+                    <div class="row"><h1></h1></div>
+                    <div class="row"><h1></h1></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <ul id="repos" class="list-group"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="right" class="col">
+          RIGHT
+        </div
+        >
+      </div>
+    </div>
+    <script
+          src="http://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
